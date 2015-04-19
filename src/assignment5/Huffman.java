@@ -12,7 +12,7 @@ public class Huffman {
 		text = s;
 		frequency = getCharacterFrequency(text);
 		HuffmanTree hf = huffmanTree();
-		printTreePreOrder(hf.root);
+		printTreeInOrder(hf.root);
 	}
 
 
@@ -44,8 +44,16 @@ public class Huffman {
 	
 	public void printTreePreOrder(HuffmanNode n){
 		  if (n != null){
-	            System.out.println(n.element + " " );
+	            System.out.println("element: " + n.element + " frequency: " + n.freq );
 	            printTreePreOrder(n.left);             
+	            printTreePreOrder(n.right);
+	        }
+	}
+	
+	public void printTreeInOrder(HuffmanNode n){
+		  if (n != null){
+			  printTreePreOrder(n.left); 
+	            System.out.println("element: " + n.element + " frequency: " + n.freq );            
 	            printTreePreOrder(n.right);
 	        }
 	}
