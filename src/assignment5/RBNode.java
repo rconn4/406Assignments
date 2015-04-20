@@ -17,6 +17,6 @@ public class RBNode {
 		this.left = left;
 		this.right = right;
 		this.element = theElement;
-		color = 1;
+		color = 1; // 1 Red ; 0 Black
 	}
 }

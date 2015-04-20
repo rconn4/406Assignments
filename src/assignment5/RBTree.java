@@ -6,8 +6,13 @@ public class RBTree {
 		
 	}
 	
-	public void InsertBST(){
+	public void InsertBST(RBNode T){
 		
+		RBNode root; //insert into BST
+		T.color = 1;
+		//while(T.element != root.element && T.color == 1){
+			
+		//}
 	}
 	
 }
@@ -37,6 +42,10 @@ public class RBTree {
 	     } // endWhile
 	    root.color = black;
 	    return root;
+	    
+	    
+	    http://www.cs.armstrong.edu/liang/intro9e/html/HuffmanCode.html
+	    http://www.sanfoundry.com/java-program-implement-red-black-tree/
 	} 
 	*/
 
