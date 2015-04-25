@@ -7,9 +7,10 @@ public class RBNode {
 	int element;
 	int color;
 
+	
 	public RBNode(int theElement)
 	{
-		this(theElement, null, null );
+		this(theElement, null, null);
 	} 
 	
 	public RBNode(int theElement, RBNode left, RBNode right)
@@ -17,6 +18,6 @@ public class RBNode {
 		this.left = left;
 		this.right = right;
 		this.element = theElement;
-		color = 1; // 1 Red ; 0 Black
+		color = 0; // 1 Black ; 0 Red
 	}
 }
