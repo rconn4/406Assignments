@@ -10,7 +10,7 @@ import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 
-public class HuffmanRBTreeTester {
+public class HuffmanRBTreeTester extends JPanel{
 
 	int algorithm;
 	String RBData;
@@ -49,6 +49,7 @@ public class HuffmanRBTreeTester {
 				for(int j = 0; j < RBNodeArray.length; j++){
 					System.out.println("INSERTING " + RBNodeArray[j] + " INTO SPLAY TREE ");
 					rbt.insert(RBNodeArray[j]);
+					rbt.preorder();
 					System.out.println("--------------------------------------------------" );
 				}
 			}

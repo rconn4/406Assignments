@@ -31,7 +31,7 @@ public class RBTree {
 		header.right = nullNode;
 	}
 
-	public void insert(int item )
+	public void insert(int item)
 	{
 		current = parent = grand = header;
 		nullNode.element = item;
